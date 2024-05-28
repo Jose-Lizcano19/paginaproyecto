@@ -1,0 +1,111 @@
+
+/* Estilos CSS para mejorar el aspecto visual */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+video {
+    width: 80%; /* Ancho del video al 80% del contenedor */
+    max-width: 800px; /* Máximo ancho del video */
+    display: block;
+    margin: 0 auto; /* Centrar el video horizontalmente */
+}
+
+#movie-info {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+h2 {
+    color: #FF5733; /* Color de título */
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+#comments {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+#comment-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    color: #FFF;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background-color: #444;
+    color: #FFF;
+}
+
+button {
+    background-color: #FF2F28;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF5733;
+}
+
+#comment-list {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.comment {
+    margin: 20px 0;
+}
+
+.comment strong {
+    color: #FF5733;
+}
+
+.comment p {
+    margin: 10px 0;
+}

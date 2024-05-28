@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #030303;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(imagenes/bg.jpg);
+    background-position: below center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    color: #FFFFFF;   
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #FF2F28;
+}
+
+
+/* Estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #030303; /* Fondo del menú desplegable */
+    border: 1px solid #FF2F28; /* Borde del menú desplegable */
+    list-style: none;
+    padding: 10px 0;
+    max-height: 50vh; /* Máxima altura del menú al 50% de la altura de la ventana */
+    overflow-y: auto; /* Hacer que el menú sea deslizable si no entran todos los elementos */
+}
+
+.submenu li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.submenu a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Estilos para mostrar el menú desplegable al pasar el cursor sobre "Nosotros" */
+li:hover .submenu {
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+.header-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.header-1 img {
+    width: 300px;
+}
+
+.header-2 {
+    width: 50%;
+    margin-top: 80px;
+    text-align: end;
+}
+
+.header-2 h1 {
+    color: #FFFFFF72;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.header-2 img {
+    width: 70px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: #FF2F28;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.btn-2 {
+    width: 110px;
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: #FF2F28;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #FFFFFF;
+}
+
+.movies {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;  
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #FF2F28;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.box-container-1 ,
+.box-container-2 ,
+.box-container-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.box-1 ,
+.box-2 ,
+.box-3 {
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4) {
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4) {
+    display: inline-block;
+}
+
+.box-3:nth-child(1),
+.box-3:nth-child(2),
+.box-3:nth-child(3),
+.box-3:nth-child(4) {
+    display: inline-block;
+}
+
+.load-more {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid #FF2F28;
+    color: #FF2F28;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.load-more:hover {
+    background-color: #FF2F28;
+    color: #FFFFFF;
+}
+
+.content img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.content {
+    color: #CFCFCF;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    margin-top: 100px;
+    border-top: 1px solid #FF2F283D;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer h3 {
+    font-size: 30px;
+}
+
+.footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-right: 20px;
+    display: block;
+}
+
+.box-1:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.box-2:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.box-3:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.image-container {
+    position: relative;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    color: #FF2F28;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+
+
+.footer a:hover {
+    color: #FF2F28;
+}
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #030303;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+    }
+
+    .header-1 {
+        width: 100px;
+        align-items: center;
+    }
+
+    .header-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .movie {
+        padding: 30px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+}
+
+
+.subscription {
+    background-color: #FF2F28;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subscription h2 {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.subscription p {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subscription-form label {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.subscription-form select {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.subscription-form select option {
+    background-color: #FF2F28;
+}
+
+.subscription-form button {
+    background-color: #030303;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.subscription-form button:hover {
+    background-color: #FFFFFF;
+    color: #030303;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #FF2F28;
+    border-radius: 5px;
+    margin-right: 10px;
+    
+}
+
+#search-button {
+    background-color: #FF2F28;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: #FFFFFF;
+    color: #030303;
+}
+

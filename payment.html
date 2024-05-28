@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <body>
+   
+        <header class="header">
+    
+            <div class="menu container">
+    
+                <a href="#" class=" logo"  >umizoomi</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Peliculas</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+    
+                </nav>
+                <a href="login.html" class="btn-1">Login</a>
+                <div class="search-bar container">
+                <input type="text" id="search-input" placeholder="Buscar películas">
+                <button id="search-button">Buscar</button>
+            </div>
+            </div>
+    
+
+        
+    <style>
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background-color: #030303;
+            font-family: 'Bebas Neue', cursive;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 300px;
+            padding: 20px;
+            background-color: #030303;
+            border: 1px solid #FF2F28;
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 20px;
+            color: #FFFFFF;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #FF2F28;
+            background-color: transparent;
+            color: #FFFFFF;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #FF2F28;
+            color: #FFFFFF;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #FFFFFF;
+            color: #030303;
+        }
+
+     
+    /* Existing styles */
+
+    /* New styles for subscription plan section */
+    label[for="subscription-plan"] {
+        font-size: 20px;
+        color: #FFFFFF;
+        display: block;
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    #subscription-plan {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border: 2px solid #FF2F28;
+        background-color: transparent;
+        color: #FFFFFF;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    #subscribe-button {
+        background-color: #FF2F28;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block; /* Ensure the button takes full width */
+        width: 100%; /* Make the button take full width */
+    }
+
+    #subscribe-button:hover {
+        background-color: #FFFFFF;
+        color: #030303;
+    }
+
+    #subscription-plan {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #FF2F28;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#subscription-plan option {
+    background-color: #030303;
+    color: #FFFFFF;
+}
+
+#subscription-plan:hover,
+#subscription-plan:focus {
+    border-color: #FFFFFF;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Procesar Pago</h2>
+    <form id="payment-form">
+        <label for="card-number">Número de Tarjeta:</label>
+        <input type="text" id="card-number" required>
+        <br>
+        <label for="card-expiry">Fecha de Vencimiento:</label>
+        <input type="text" id="card-expiry" required>
+        <br>
+        <label for="card-cvc">CVC:</label>
+        <input type="text" id="card-cvc" required>
+        <br>
+        <label for="subscription-plan">Elige un plan:</label>
+                <select id="subscription-plan">
+                    <option value="monthly">Mensual - $9.99/mes</option>
+                    <option value="annual">Anual - $99.99/año</option>
+                </select>
+                <a href="payment.html">
+                    <button id="subscribe-button">Suscribirse</button>
+                </a>
+            </div>
+    </form>
+    <script src="payment.js"></script>
+</body>
+</html>
+
+<footer class="footer container">
+
+    <h3>umizoomi</h3>
+
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Peliculas</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="video_style.css">
+</head>
+<body>
+   
+    <header class="header">
+
+        <div class="menu container">
+
+            <a href="#" class=" logo"  >umizoomi</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a href="#">Categorias</a>
+                        <ul class="submenu">
+                            <li><a href="accion.html">Accion</a></li>
+                            <li><a href="fantasia.html">Fantasia</a></li>
+                            <li><a href="comedia.html">Comedia</a></li>
+                            <li><a href="terror.html">Terror</a></li>
+                            <li><a href="drama.html">Drama</a></li>
+                            <li><a href="suspenso.html">Suspenso</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="peliculas.html">Peliculas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+
+            </nav>
+            <a href="login.html" class="btn-1">Login</a>
+            <div class="search-bar container">
+            <input type="text" id="search-input" placeholder="Buscar películas">
+            <button id="search-button">Buscar</button>
+        </div>
+        </div>
+
+        
+
+        <div class="header-content container">
+            <div class="header-1">
+                <img src="imagenes/venom.png" alt="">
+                <a href="#" class="btn-2">Ver ahora</a>
+            </div>
+            <div class="header-2">
+                <h1>Las mejores <br> peliculas </h1>
+                <img src="imagenes/play.png" alt="">
+            </div>
+        </div>     
+    </header>
+
+</head>
+<body>
+    <h1>FIVE NIGHTS AT FREDDY'S</h1>
+    <video width="640" height="360" controls>
+        <source src="imagenes/juujuutsuukainoo2nseasunsqsss-14.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+
+    
+    <div id="movie-info">
+        <h2>Información de la Película</h2>
+        <ul>
+            <li><strong>Director:</strong> Shane Black</li>
+            <li><strong>Año de Lanzamiento:</strong> 26 de abril de 2013</li>
+        </ul>
+        <p><strong>Sinopsis:</strong> El descarado y brillante Tony Stark, tras ver destruido todo su universo personal, debe encontrar y enfrentarse a un enemigo cuyo poder no conoce límites. Este viaje pondrá a prueba su entereza una y otra vez, y le obligará a confiar en su ingenio..</p>
+    </div>
+    <div id="comments" class="container">
+        <h2>Comentarios</h2>
+        <div id="comment-form">
+            <h3>Deja un comentario</h3>
+            <form>
+                <div class="form-group">
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Enviar comentario</button>
+            </form>
+        </div>
+        <div id="comment-list">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+    </div>
+
+<footer class="footer container">
+
+    <h3>umizoomi</h3>
+
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Peliculas</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
